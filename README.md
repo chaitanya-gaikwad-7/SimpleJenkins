@@ -1,3 +1,3 @@
 # SimpleJenkins
-test repo for Jenkins plugin for git
-new edit
+test repo for Jenkins plugin for git \n 
+2nd edit
