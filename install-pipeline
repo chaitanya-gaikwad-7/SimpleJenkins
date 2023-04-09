@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    stages{
+        stage("Pre-reuisites"){
+            steps{
+                echo "========executing tnsnames and userintentions========"
+                echo "${oracle_server}"
+                echo "${port}"
+            }
+        }
+        stage("GA"){
+            steps{
+                echo "========executing tnsnames and userintentions========"
+                echo "${installation_server}"
+            }
+        }
+    }
+    post{
+        always{
+            echo "========always========"
+        }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }
+    }
+}
