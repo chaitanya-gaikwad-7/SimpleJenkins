@@ -10,7 +10,7 @@ pipeline{
         }
         stage("GA"){
             steps{
-                echo "========executing tnsnames and userintentions========"
+                echo "========executing installations ========"
                 echo "${installation_server}"
             }
         }
