@@ -4,9 +4,9 @@ pipeline{
         stage('build'){
             steps{
                 echo "Hello"
-                echo $installation_server
-                echo $oracle_server
-                echo $port
+                echo "${installation_server}"
+                echo "${oracle_server}"
+                echo "${port}"
             }
         }
     }
